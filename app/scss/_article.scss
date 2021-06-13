@@ -5,13 +5,14 @@
 .article {
 
     &__content {
-
+        
     }
 
     &__grid {
         display: grid;
         //grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
         grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
 
         @include breakpoint-up(medium){
             grid-template-columns: repeat(2, 1fr);
@@ -23,29 +24,40 @@
     }
 
     &__item {
-
+        background-color: $white;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 5px 5px 5px $lightGrayishBlue, -5px 5px 5px $lightGrayishBlue;
     }
     
     &__image {
-        background-image: url('/images/image-currency.jpg');
+        //background-image: url('/images/image-currency.jpg');
         background-size: cover;
         height: 12.5rem;
+        border-radius: 5px 5px 0 0;
     }
     
     &__text {
-
+        text-align: left;
+        padding: 1rem;
+        color: black;
+        font-weight: 300;
     }
     
     &__author {
-
+        font-size: 0.7rem;
+        color: $grayishBlue;
     }
     
     &__title {
-
+        font-size: 1rem;
+        padding-top: 0.7rem;
     }
     
     &__description {
-
+        padding-top: 0.7em;
+        font-size: .8rem;
+        line-height: 1.5;
+        color: $grayishBlue;
     }
     
 }

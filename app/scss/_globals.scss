@@ -18,6 +18,7 @@ body {
   color: $grayishBlue;
   font-weight: 400;
   min-height: 300vh;
+  overflow-x: hidden;
 
   @include breakpoint-up(large) {
     font-size: $font-md;
@@ -150,7 +151,7 @@ button,
   color: $white;
   font-weight: 700;
   font-size: $font-sm;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
   overflow: hidden;
 
   &::before {
